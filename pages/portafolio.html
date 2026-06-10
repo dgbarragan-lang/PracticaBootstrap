@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Mi Portafolio Web</title>
+
+    <!-- Como este archivo está dentro de pages, se sube un nivel con ../ -->
+    <link rel="icon" href="../img/mundito.ico" type="image/x-icon">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+    <link rel="stylesheet" href="../css/general.css">
+    <link rel="stylesheet" href="../css/portafolio.css">
+</head>
+
+<body>
+
+    <!-- Encabezado principal -->
+    <header>
+        <h1>Mi Portafolio Web</h1>
+        <p>Proyectos y aprendizajes en desarrollo web con HTML y CSS</p>
+    </header>
+
+    <!-- Menú de navegación -->
+    <nav>
+        <a href="../index.html">
+            <i class="fa-solid fa-house"></i>
+            Inicio
+        </a>
+
+        <a href="portafolio.html">
+            <i class="fa-solid fa-briefcase"></i>
+            Portafolio
+        </a>
+
+        <a href="buscar.html">Búsqueda</a>
+
+        <a href="cto/contacto.html">
+            <i class="fa-solid fa-envelope"></i>
+            Contacto
+        </a>
+    </nav>
+
+    <!-- Contenido principal -->
+    <main>
+
+        <!-- Sección de presentación -->
+        <section id="presentacion-portafolio">
+            <h2>Bienvenido a mi Portafolio</h2>
+            <p>
+                Aquí presento mis proyectos y aprendizajes en el desarrollo web.
+                En esta sección encontrarás información sobre mis habilidades,
+                proyectos realizados y el progreso en mi formación como desarrollador web.
+            </p>
+            <p>
+                Mi objetivo es crear páginas web con estructura clara,
+                estilo visual atractivo y experiencia de usuario óptima.
+            </p>
+        </section>
+
+        <!-- Sección de proyectos / artículos -->
+        <section id="proyectos">
+            <h2>Proyectos Destacados</h2>
+
+            <!-- Artículo 1: Fundamentos de HTML -->
+            <section>
+                <div>
+                    <h3><i class="fa-solid fa-code"></i> Fundamentos de HTML</h3>
+                </div>
+
+                <figure>
+                    <img src="../img/espe/imagenEjemploEspe.png" alt="HTML Fundamentals">
+                    <figcaption>Estructura básica de una página HTML</figcaption>
+                </figure>
+
+                <p>
+                    Proyecto inicial que demuestra el dominio de etiquetas semánticas,
+                    estructura de documentos HTML, y buenas prácticas de organización
+                    de contenido. Incluye navegación entre páginas, formularios y uso
+                    correcto de rutas relativas.
+                </p>
+                <div class="semantico">
+                    <ul>
+                        <li>Etiquetas semánticas</li>
+                        <li>Formularios interactivos</li>
+                        <li>Navegación estructurada</li>
+                        <li>Multimedia integrada</li>
+                    </ul>
+                </div>
+                <span>Nivel: Principiante</span>
+            </section>
+
+            <!-- Artículo 2: Introducción a CSS -->
+            <section>
+                <div>
+                    <h3><i class="fa-solid fa-palette"></i> Introducción a CSS</h3>
+                </div>
+
+                <figure>
+                    <img src="../img/espe/imagenEjemploEspe.png" alt="CSS Styling">
+                    <figcaption>Diseño visual con CSS</figcaption>
+                </figure>
+
+                <p>
+                    Aplicación de estilos CSS para mejorar la presentación visual.
+                    Trabajo con selectores, propiedades de color, espaciado, bordes
+                    y tipografía. Uso de clases e identificadores para reutilización
+                    de estilos y mantenimiento eficiente del código.
+                </p>
+
+                <div class="semantico">
+                    <ul>
+                        <li>Selectores CSS</li>
+                        <li>Propiedades de estilo</li>
+                        <li>Flexbox y Grid</li>
+                        <li>Diseño responsivo</li>
+                    </ul>
+                </div>
+
+                <span>Nivel: Intermedio</span>
+            </section>
+
+            <!-- Artículo 3: Diseño Web Semántico -->
+            <section>
+                <div>
+
+                    <h3><i class="fa-solid fa-pen-ruler"></i> Diseño Web Semántico</h3>
+                </div>
+
+                <figure>
+                    <img src="../img/espe/imagenEjemploEspe.png" alt="Semantic HTML">
+                    <figcaption>Estructura semántica moderna</figcaption>
+                </figure>
+
+                <p>
+                    Implementación de HTML5 semántico con el uso correcto de etiquetas
+                    como article, section, aside, figure y footer. Esta aproximación
+                    mejora la accesibilidad, el SEO y la mantenibilidad del código
+                    para proyectos profesionales.
+                </p>
+
+                <div class="semantico">
+                    <ul>
+                        <li>Etiquetas semánticas avanzadas</li>
+                        <li>Accesibilidad web</li>
+                        <li>Optimización SEO</li>
+                        <li>Buenas prácticas de codificación</li>
+                    </ul>
+                </div>
+
+                <span>Nivel: Avanzado</span>
+            </section>
+
+        </section>
+
+        <!-- Sección de tabla de progreso -->
+        <section id="progreso">
+            <h2>Avance en Habilidades</h2>
+
+            <table>
+                <caption>Resumen de competencias técnicas desarrolladas</caption>
+
+                <thead>
+                    <tr>
+                        <th>Habilidad</th>
+                        <th>Avance</th>
+                        <th>Estado</th>
+                        <th>Observaciones</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+                    <tr>
+                        <td>HTML Semántico</td>
+                        <td>
+                            <progress value="95" max="100"></progress>
+                            95%
+                        </td>
+                        <td><span>Completado</span></td>
+                        <td>Dominio avanzado de etiquetas semánticas</td>
+                    </tr>
+
+                    <tr>
+                        <td>Formularios HTML</td>
+                        <td>
+                            <progress value="85" max="100"></progress>
+                            85%
+                        </td>
+                        <td><span>Avanzado</span></td>
+                        <td>Validación básica implementada</td>
+                    </tr>
+
+                    <tr>
+                        <td>CSS Básico</td>
+                        <td>
+                            <progress value="80" max="100"></progress>
+                            80%
+                        </td>
+                        <td><span>Avanzado</span></td>
+                        <td>Selectores y propiedades fundamentales dominadas</td>
+                    </tr>
+
+                    <tr>
+                        <td>Flexbox y Layout</td>
+                        <td>
+                            <progress value="70" max="100"></progress>
+                            70%
+                        </td>
+                        <td><span>Intermedio</span></td>
+                        <td>En desarrollo continuo</td>
+                    </tr>
+
+                    <tr>
+                        <td>Diseño Responsivo</td>
+                        <td>
+                            <progress value="65" max="100"></progress>
+                            65%
+                        </td>
+                        <td><span>Intermedio</span></td>
+                        <td>Media queries en proceso de aprendizaje</td>
+                    </tr>
+
+                    <tr>
+                        <td>JavaScript Básico</td>
+                        <td>
+                            <progress value="40" max="100"></progress>
+                            40%
+                        </td>
+                        <td><span>Iniciante</span></td>
+                        <td>Próximo tema a estudiar</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <!-- Sección de competencias / habilidades -->
+        <section id="competencias">
+            <h2>Competencias Técnicas</h2>
+
+            <div>
+
+                <div>
+                    <i class="fa-solid fa-laptop-code"></i>
+                    <h4>Frontend</h4>
+                    <ul>
+                        <li>HTML5</li>
+                        <li>CSS3</li>
+                        <li>Responsive Design</li>
+                    </ul>
+                </div>
+
+                <div>
+                    <i class="fa-solid fa-terminal"></i>
+                    <h4>Herramientas</h4>
+                    <ul>
+                        <li>VS Code</li>
+                        <li>Git/GitHub</li>
+                        <li>Control de versiones</li>
+                    </ul>
+                </div>
+
+                <div>
+                    <i class="fa-solid fa-chart-line"></i>
+                    <h4>Soft Skills</h4>
+                    <ul>
+                        <li>Comunicación</li>
+                        <li>Trabajo en equipo</li>
+                        <li>Resolución de problemas</li>
+                    </ul>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- Sección de detalles expandibles -->
+        <section id="detalles">
+            <h2>Detalles de Proyectos</h2>
+
+            <details>
+                <summary>¿Cuál fue el primer proyecto?</summary>
+                <p>
+                    Mi primer proyecto fue crear una página web personal completa
+                    con múltiples secciones, navegación entre páginas, formularios
+                    y contenido multimedia. Este proyecto sentó las bases para
+                    entender la estructura HTML5.
+                </p>
+            </details>
+
+            <details>
+                <summary>¿Cuáles son mis objetivos futuros?</summary>
+                <p>
+                    Deseo aprender JavaScript para interactividad, dominar frameworks
+                    como React, entender backend con Node.js, y eventualmente crear
+                    aplicaciones web completas. También quiero especializarme en
+                    diseño responsivo y accesibilidad web.
+                </p>
+            </details>
+
+            <details>
+                <summary>¿Qué herramientas utilizo?</summary>
+                <p>
+                    Utilizo Visual Studio Code como editor principal, Git para control
+                    de versiones, y navegadores modernos para testing. Complemento
+                    con Font Awesome para íconos y librerías CSS externas cuando es
+                    necesario.
+                </p>
+            </details>
+
+        </section>
+
+    </main>
+
+    <!-- Pie de página -->
+    <footer>
+        <p>&copy; 2026 Daniel Gustavo Barragan Montero.</p>
+        <p>Clase de Fundamentos Web - HTML Semántico y CSS.</p>
+
+        <address>
+            Ecuador<br>
+            Contacto académico: dgbarragan@espe.edu.ec
+        </address>
+    </footer>
+
+</body>
+
+</html>
