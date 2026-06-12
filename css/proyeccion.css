@@ -129,6 +129,21 @@ button:focus {
     outline: 3px solid rgba(43, 108, 176, 0.2)
 }
 
+.hero {
+    background: rgba(235, 245, 255, 0.95);
+    border-left: 4px solid #0d6efd;
+}
+
+.section-title {
+    font-size: 1.25rem;
+    font-weight: 700;
+    margin-bottom: 0.75rem;
+}
+
+.object-fit-cover {
+    object-fit: cover;
+}
+
 .site-footer {
     background: transparent;
     padding: 1rem 0;
@@ -136,7 +151,7 @@ button:focus {
     text-align: center
 }
 
-@media(min-width:700px) {
+@media (min-width: 700px) {
     .proyeccion {
         display: grid;
         grid-template-columns: 1fr 320px;
