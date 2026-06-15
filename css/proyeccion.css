@@ -165,3 +165,74 @@ button:focus {
         height: max-content
     }
 }
+
+/* Carousel: unificar tamaño de todos los items (imágenes, videos y texto) */
+.carousel-inner {
+    --carousel-height: 320px;
+    height: var(--carousel-height);
+}
+
+.carousel-item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    padding: 0.5rem;
+    text-align: center;
+}
+
+.carousel-item img,
+.carousel-item video {
+    width: 100%;
+    height: 100%;
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: cover;
+    border-radius: 6px;
+}
+
+.carousel-item p {
+    margin: 0.25rem 0;
+    line-height: 1.4;
+    color: var(--text);
+}
+
+/* Ajustes responsivos: aumentar altura en pantallas grandes */
+@media (min-width: 768px) {
+    .carousel-inner {
+        --carousel-height: 420px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .carousel-inner {
+        --carousel-height: 480px;
+    }
+}
+
+/* Fix: esconder slides que no están activos para evitar overlays
+   y asegurar que los controles sean clicables */
+.carousel-item:not(.active) {
+    display: none !important;
+    visibility: hidden
+}
+
+.carousel-item.active {
+    display: flex !important;
+    visibility: visible
+}
+
+#proyeccionCarousel {
+    position: relative;
+    z-index: 1
+}
+
+#proyeccionCarousel .carousel-control-prev,
+#proyeccionCarousel .carousel-control-next {
+    z-index: 2
+}
+
+.carousel-item img,
+.carousel-item video {
+    pointer-events: auto
+}
